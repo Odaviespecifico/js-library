@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livraria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <div class="books">
-        ]
+    <div class="main">
+        <h1>Livros</h1>
+        <div class="cards"></div>
+        <button class="addbook">Adicionar livro</button>
     </div>
+    <dialog>
+        <form action="dialog">
+            <input type="text" name="titulo" id="titulo" placeholder="Título" required maxlength="19">
+            <input type="text" name="autor" id="autor" placeholder="Autor" required maxlength="19">
+            <input type="number" name="paginas" id="paginas" placeholder="Quantidade de páginas" required min="0">
+            <div class="">
+                <label for="lido">Já leu o livro?</label>
+                <input type="checkbox" name="lido" id="lido">
+            </div>
+            <button type="submit">Adicionar Livro</button>
+        </form>
+    </dialog>
 </body>
 </html>
